@@ -1,0 +1,6 @@
+/home/j/codingbooks/primer1/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/home/j/codingbooks/primer1/cmake-build-default/CMakeFiles/edit_cache.dir
+/home/j/codingbooks/primer1/cmake-build-default/CMakeFiles/LargestPrime.dir
+/home/j/codingbooks/primer1/cmake-build-default/CMakeFiles/FizzBuzz.dir
+/home/j/codingbooks/primer1/cmake-build-default/CMakeFiles/PrimePairs.dir
+/home/j/codingbooks/primer1/cmake-build-default/CMakeFiles/GCDandLCM.dir

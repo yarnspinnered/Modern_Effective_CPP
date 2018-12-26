@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/FizzBuzz.dir/Ch1_Math/FizzBuzz.cpp.o  -o FizzBuzz 

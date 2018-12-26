@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/PrimePairs.dir/Ch1_Math/PrimePairs.cpp.o  -o PrimePairs 

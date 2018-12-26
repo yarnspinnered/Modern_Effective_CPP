@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/j/codingbooks/primer1/Sales_item.h
+iostream
+-
+string
+-
+
+/home/j/codingbooks/primer1/main.cpp
+iostream
+-
+Sales_item.h
+/home/j/codingbooks/primer1/Sales_item.h
+vector
+-
+algorithm
+-
+numeric
+-
+set
+-
+utility
+-
+

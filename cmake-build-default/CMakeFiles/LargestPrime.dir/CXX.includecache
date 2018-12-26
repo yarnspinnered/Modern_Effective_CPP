@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/j/codingbooks/primer1/cmake-build-default/Ch1_Math/LargestPrime.cpp
+iostream
+-
+math.h
+/home/j/codingbooks/primer1/cmake-build-default/Ch1_Math/math.h
+algorithm
+-
+vector
+-
+
