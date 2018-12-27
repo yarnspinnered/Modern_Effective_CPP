@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LargestPrime
+# Target rules for targets named GCDandLCM
 
 # Build rule for target.
-LargestPrime: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LargestPrime
-.PHONY : LargestPrime
+GCDandLCM: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GCDandLCM
+.PHONY : GCDandLCM
 
 # fast build rule for target.
-LargestPrime/fast:
-	$(MAKE) -f CMakeFiles/LargestPrime.dir/build.make CMakeFiles/LargestPrime.dir/build
-.PHONY : LargestPrime/fast
-
-#=============================================================================
-# Target rules for targets named FizzBuzz
-
-# Build rule for target.
-FizzBuzz: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FizzBuzz
-.PHONY : FizzBuzz
-
-# fast build rule for target.
-FizzBuzz/fast:
-	$(MAKE) -f CMakeFiles/FizzBuzz.dir/build.make CMakeFiles/FizzBuzz.dir/build
-.PHONY : FizzBuzz/fast
+GCDandLCM/fast:
+	$(MAKE) -f CMakeFiles/GCDandLCM.dir/build.make CMakeFiles/GCDandLCM.dir/build
+.PHONY : GCDandLCM/fast
 
 #=============================================================================
 # Target rules for targets named PrimePairs
@@ -150,17 +137,43 @@ PrimePairs/fast:
 .PHONY : PrimePairs/fast
 
 #=============================================================================
-# Target rules for targets named GCDandLCM
+# Target rules for targets named FizzBuzz
 
 # Build rule for target.
-GCDandLCM: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 GCDandLCM
-.PHONY : GCDandLCM
+FizzBuzz: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FizzBuzz
+.PHONY : FizzBuzz
 
 # fast build rule for target.
-GCDandLCM/fast:
-	$(MAKE) -f CMakeFiles/GCDandLCM.dir/build.make CMakeFiles/GCDandLCM.dir/build
-.PHONY : GCDandLCM/fast
+FizzBuzz/fast:
+	$(MAKE) -f CMakeFiles/FizzBuzz.dir/build.make CMakeFiles/FizzBuzz.dir/build
+.PHONY : FizzBuzz/fast
+
+#=============================================================================
+# Target rules for targets named LargestPrime
+
+# Build rule for target.
+LargestPrime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LargestPrime
+.PHONY : LargestPrime
+
+# fast build rule for target.
+LargestPrime/fast:
+	$(MAKE) -f CMakeFiles/LargestPrime.dir/build.make CMakeFiles/LargestPrime.dir/build
+.PHONY : LargestPrime/fast
+
+#=============================================================================
+# Target rules for targets named ipv4
+
+# Build rule for target.
+ipv4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ipv4
+.PHONY : ipv4
+
+# fast build rule for target.
+ipv4/fast:
+	$(MAKE) -f CMakeFiles/ipv4.dir/build.make CMakeFiles/ipv4.dir/build
+.PHONY : ipv4/fast
 
 Ch1_Math/FizzBuzz.o: Ch1_Math/FizzBuzz.cpp.o
 
@@ -297,6 +310,33 @@ Ch1_Math/PrimePairs.cpp.s:
 	$(MAKE) -f CMakeFiles/PrimePairs.dir/build.make CMakeFiles/PrimePairs.dir/Ch1_Math/PrimePairs.cpp.s
 .PHONY : Ch1_Math/PrimePairs.cpp.s
 
+Ch2_LangFeatures/ipv4.o: Ch2_LangFeatures/ipv4.cpp.o
+
+.PHONY : Ch2_LangFeatures/ipv4.o
+
+# target to build an object file
+Ch2_LangFeatures/ipv4.cpp.o:
+	$(MAKE) -f CMakeFiles/ipv4.dir/build.make CMakeFiles/ipv4.dir/Ch2_LangFeatures/ipv4.cpp.o
+.PHONY : Ch2_LangFeatures/ipv4.cpp.o
+
+Ch2_LangFeatures/ipv4.i: Ch2_LangFeatures/ipv4.cpp.i
+
+.PHONY : Ch2_LangFeatures/ipv4.i
+
+# target to preprocess a source file
+Ch2_LangFeatures/ipv4.cpp.i:
+	$(MAKE) -f CMakeFiles/ipv4.dir/build.make CMakeFiles/ipv4.dir/Ch2_LangFeatures/ipv4.cpp.i
+.PHONY : Ch2_LangFeatures/ipv4.cpp.i
+
+Ch2_LangFeatures/ipv4.s: Ch2_LangFeatures/ipv4.cpp.s
+
+.PHONY : Ch2_LangFeatures/ipv4.s
+
+# target to generate assembly for a file
+Ch2_LangFeatures/ipv4.cpp.s:
+	$(MAKE) -f CMakeFiles/ipv4.dir/build.make CMakeFiles/ipv4.dir/Ch2_LangFeatures/ipv4.cpp.s
+.PHONY : Ch2_LangFeatures/ipv4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -304,11 +344,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... LargestPrime"
-	@echo "... FizzBuzz"
-	@echo "... PrimePairs"
 	@echo "... GCDandLCM"
+	@echo "... PrimePairs"
+	@echo "... FizzBuzz"
+	@echo "... LargestPrime"
+	@echo "... ipv4"
+	@echo "... edit_cache"
 	@echo "... Ch1_Math/FizzBuzz.o"
 	@echo "... Ch1_Math/FizzBuzz.i"
 	@echo "... Ch1_Math/FizzBuzz.s"
@@ -324,6 +365,9 @@ help:
 	@echo "... Ch1_Math/PrimePairs.o"
 	@echo "... Ch1_Math/PrimePairs.i"
 	@echo "... Ch1_Math/PrimePairs.s"
+	@echo "... Ch2_LangFeatures/ipv4.o"
+	@echo "... Ch2_LangFeatures/ipv4.i"
+	@echo "... Ch2_LangFeatures/ipv4.s"
 .PHONY : help
 
 
